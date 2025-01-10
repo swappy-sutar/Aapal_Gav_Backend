@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(135deg, #ffffff, #e3eaf3);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login-container {
+        text-align: center;
+        background: #ffffff;
+        padding: 40px 30px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 90%;
+      }
+
+      .login-container h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #444;
+        margin-bottom: 20px;
+      }
+
+      .google-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        color: #757575;
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: 2px solid transparent;
+      }
+
+      .google-btn img {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .google-btn:hover {
+        background-color: #4285f4;
+        color: white;
+        transform: scale(1.05);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .google-btn:focus {
+        outline: none;
+        border: 2px solid #4285f4;
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #757575;
+      }
+
+      footer a {
+        color: #4285f4;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Welcome Back</h1>
+     <a href="/auth/google" class="google-btn">
+  <img src="/public/Google_Icons.webp" alt="Google logo" width="30" height="30" />
+  Login with Google
+</a>
+
+      <footer>
+        <p>
+          By continuing, you agree to our
+          <a href="/terms">Terms of Service</a> and
+          <a href="/privacy">Privacy Policy</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
